@@ -1,0 +1,327 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 300px;
+  height: 280px;
+  position: absolute;
+  top: 25vh;
+  left: calc(50% - 150px);
+}
+
+.header {
+  width: 100%;
+  height: 80px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #151211;
+  border-radius: 10px;
+}
+
+.header__buttons {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 25px;
+  background-color: #ff0303;
+  border-radius: 50%;
+}
+
+.header__buttons:hover {
+  background-color: green;
+  border: 0.7px solid white;
+}
+
+.header__buttons::after {
+  content: "";
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  bottom: -8px;
+  border-radius: 2px;
+  left: 8px;
+  background-color: #ffffff;
+}
+
+.header__button-one {
+  left: 15px;
+}
+
+.header__button-two {
+  left: 50px;
+}
+
+.header__display {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 10px;
+  left: 123px;
+  border-radius: 50%;
+  background-color: #ddff00;
+  color: #513126;
+  border: 5px solid #4b2d22;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+
+.hide {
+  display: none;
+}
+
+.header__display:hover {
+  width: 6px;
+  height: 73px;
+  opacity: 1;
+  position: absolute;
+  top: 120px;
+  left: 146px;
+  background-color: #74372b;
+  animation: liquid1 6s 2s linear infinite;
+  color: #0909ec;
+  z-index: 1;
+}
+
+.header__details {
+  width: 8px;
+  height: 20px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #0bff34;
+  box-shadow: -12px 0 0 #77ff01ac, -24px 0 0 #0ee0235b;
+}
+
+.center {
+  width: 90%;
+  height: 160px;
+  position: absolute;
+  top: 80px;
+  left: 15px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(94450802-space-neon-blue-lighting-veins-seamless-pattern-texture-background.jpg);
+}
+
+.center:before {
+  content: "";
+  width: 90%;
+  height: 100px;
+  background-image: url(coffe.jpeg);
+  background-size: cover;
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - 45%);
+  border-radius: 20px 20px 0 0;
+}
+
+.main__exit {
+  width: 60px;
+  height: 20px;
+  position: absolute;
+  top: 0;
+  left: calc(50% - 30px);
+  background-color: #231f20;
+}
+
+.main__exit::before {
+  content: "";
+  width: 50px;
+  height: 20px;
+  border-radius: 0 0 50% 50%;
+  position: absolute;
+  bottom: -20px;
+  left: 5px;
+  background-color: #231f20;
+}
+
+.main__exit::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  bottom: -30px;
+  left: calc(50% - 5px);
+  background-color: #231f20;
+  z-index: 3;
+}
+
+.center__arm {
+  width: 70px;
+  height: 20px;
+  position: absolute;
+  top: 15px;
+  right: 25px;
+  background-color: #231f20;
+}
+
+.center__arm::before {
+  content: "";
+  width: 15px;
+  height: 5px;
+  position: absolute;
+  top: 7px;
+  left: -15px;
+  background-color: #9e9495;
+}
+
+.center__cup {
+  width: 80px;
+  height: 47px;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: sans-serif;
+  font-size: 12px;
+  left: calc(50% - 40px);
+  background-image: url(copper.jpg);
+  background-size: cover;
+  border-radius: 0 0 70px 70px;
+}
+
+@keyframes liquid {
+  0% {
+    height: 0px;
+    opacity: 1;
+  }
+
+  5% {
+    height: 0px;
+    opacity: 1;
+  }
+
+  20% {
+    height: 62px;
+    opacity: 1;
+  }
+
+  95% {
+    height: 70px;
+    opacity: 1;
+  }
+
+  100% {
+    height: 80px;
+    opacity: 0;
+  }
+}
+
+.center__liquid {
+  width: 6px;
+  height: 63px;
+  opacity: 0;
+  position: absolute;
+  top: 50px;
+  left: 132px;
+  background-color: #74372b;
+  /* animation: liquid 6s 2s linear infinite; */
+}
+
+.center__smoke {
+  width: 9px;
+  height: 25px;
+  position: absolute;
+  border-radius: 4px;
+  background-color: #ffffff;
+  filter: blur(7px);
+}
+
+@keyframes smokeOne {
+  0% {
+    bottom: 20px;
+    opacity: 0;
+  }
+
+  40% {
+    bottom: 50px;
+    opacity: .5;
+  }
+
+  80% {
+    bottom: 80px;
+    opacity: .3;
+  }
+
+  100% {
+    bottom: 80px;
+    opacity: 0;
+  }
+}
+
+@keyframes smokeTwo {
+  0% {
+    bottom: 40px;
+    opacity: 0;
+  }
+
+  40% {
+    bottom: 70px;
+    opacity: .5;
+  }
+
+  80% {
+    bottom: 80px;
+    opacity: .3;
+  }
+
+  100% {
+    bottom: 80px;
+    opacity: 0;
+  }
+}
+
+.center__smoke-one {
+  opacity: 0;
+  bottom: 50px;
+  left: 102px;
+  animation: smokeOne 3s 4s linear infinite;
+}
+
+.center__smoke-two {
+  opacity: 0;
+  bottom: 70px;
+  left: 118px;
+  animation: smokeTwo 3s 5s linear infinite;
+}
+
+.center__smoke-three {
+  opacity: 0;
+  bottom: 65px;
+  right: 118px;
+  animation: smokeTwo 3s 6s linear infinite;
+}
+
+.center__smoke-for {
+  opacity: 0;
+  bottom: 50px;
+  right: 102px;
+  animation: smokeOne 3s 5s linear infinite;
+}
+
+.footer {
+  width: 95%;
+  height: 15px;
+  position: absolute;
+  bottom: 25px;
+  left: 9px;
+  background-image: url(glass.jpg);
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.footer::after {
+  content: "";
+  width: 106%;
+  height: 26px;
+  position: absolute;
+  bottom: -25px;
+  left: -8px;
+  background-color: #000;
+}
